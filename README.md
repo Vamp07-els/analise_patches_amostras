@@ -100,6 +100,10 @@ Meu Drive/
         └── Outros/
 ```
 
+**[Guia das etapas do tutorial](docs/ETAPAS_TUTORIAL.md)**
+
+Consulte este documento para compreender os objetivos e os procedimentos de cada etapa do notebook, desde a caracterização da imagem CBERS-4A até a extração das amostras.
+
 **Finalidade das pastas:**
 
 - `patches_validos`: armazena os patches selecionados em GeoTIFF, separados por dimensão.
