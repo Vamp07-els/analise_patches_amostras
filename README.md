@@ -16,6 +16,10 @@ Para baixar o notebook e aprender a executá-lo no Google Colab ou no Visual Stu
 
 O tutorial foi desenvolvido originalmente no Google Colab. Sua execução no VS Code pode exigir adaptações nos caminhos dos arquivos e nos comandos específicos do Colab.
 
+**[Organização dos dados e das pastas no Google Drive](docs/ORGANIZACAO_DADOS.md)**
+
+Consulte este guia para preparar a imagem GeoTIFF de entrada, configurar os caminhos dos arquivos e compreender a finalidade das pastas utilizadas durante o processamento.
+
 ## O que você vai aprender?
 
 - Abrir e visualizar imagens GeoTIFF.
