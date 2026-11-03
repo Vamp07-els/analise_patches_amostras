@@ -8,6 +8,14 @@ O objetivo é demonstrar, passo a passo, como analisar imagens de satélite, ger
 
 O material utiliza uma imagem do satélite CBERS-4A como exemplo prático e apresenta procedimentos de preparação e extração de amostras que podem ser utilizados em etapas posteriores de aprendizado profundo.
 
+## Como utilizar o tutorial
+
+Para baixar o notebook e aprender a executá-lo no Google Colab ou no Visual Studio Code (VS Code), consulte o guia:
+
+**[Instruções para download e execução do tutorial](docs/INSTALACAO.md)**
+
+O tutorial foi desenvolvido originalmente no Google Colab. Sua execução no VS Code pode exigir adaptações nos caminhos dos arquivos e nos comandos específicos do Colab.
+
 ## O que você vai aprender?
 
 - Abrir e visualizar imagens GeoTIFF.
@@ -34,14 +42,14 @@ Antes de executar o notebook:
 1. Acesse seu Google Drive.
 2. Na seção **Meu Drive**, crie uma pasta chamada `CBERS4A`.
 3. Coloque dentro dessa pasta a imagem GeoTIFF que será utilizada no processamento.
-4. Para executar o código sem alterar o caminho original, a imagem deve estar nomeada exatamente como `Area1.tif`.
+4. Para executar o código, a imagem deve estar nomeada exatamente como esta o nome da imagem a ser usada e substituir onde está `Area1.tif` no código.
 
 A organização inicial deverá ser:
 
 ```text
 Meu Drive/
 └── CBERS4A/
-    └── Area1.tif
+    └── Area1.tif (nome da imagem)
 ```
 
 **Importante:** o código utiliza o seguinte caminho para abrir a imagem:
@@ -52,7 +60,7 @@ arquivo = "/content/drive/MyDrive/CBERS4A/Area1.tif"
 
 Caso a imagem tenha outro nome ou esteja armazenada em uma pasta diferente, será necessário modificar esse caminho no notebook.
 
-O arquivo `Area1.tif` é a imagem de entrada utilizada como exemplo neste projeto. Ele não é criado automaticamente pelo código e deve estar disponível no Google Drive antes da execução.
+O arquivo `Area1.tif` é a imagem de entrada utilizada como exemplo neste projeto. Ele não é criado automaticamente pelo código, é necessário inserir o nome original da imagem que será usada..
 
 ### 2. Conectar o Google Drive ao Colab
 
@@ -71,8 +79,8 @@ Durante o processamento, o código cria automaticamente diferentes pastas dentro
 
 ```text
 Meu Drive/
-└── CBERS4A/
-    ├── Area1.tif
+└── CBERS4A/ (pasta)
+    ├── Area1.tif (imagem)
     ├── patches_validos/
     │   ├── 32x32/
     │   ├── 64x64/
